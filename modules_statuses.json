@@ -1,0 +1,17 @@
+{
+    "Category": true,
+    "Testimonial": true,
+    "Tag": true,
+    "Blog": true,
+    "Faq": true,
+    "Wishlist": true,
+    "Priceplan": true,
+    "Language": true,
+    "Ad": true,
+    "Contact": true,
+    "Brand": true,
+    "Plan": true,
+    "Location": true,
+    "Customer": true,
+    "Newsletter": true
+}

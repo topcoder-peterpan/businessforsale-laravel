@@ -1,0 +1,47 @@
+.select-bg {
+    border: 1px solid #edeff5 !important;
+}
+
+a.brand-link img {
+    height: 33px;
+    width: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: .8rem;
+    margin-right: 0.5rem;
+    margin-top: -3px;
+}
+
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section{
+padding-top: 100px;
+}
+.form-section{
+    /* padding-left:15px; */
+    display: none;
+}
+.form-section.current{
+    display: inherit;
+}
+.btn-info, .btn-success{
+    margin-top: 10px;
+}
+.parsley-errors-list{
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    color: red;
+}

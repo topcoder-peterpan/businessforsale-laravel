@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Actions\User;
+
+use App\Models\SuperAdmin;
+
+class CreateUser
+{
+    public static function create(object $request)
+    {
+        $user = new SuperAdmin();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        if ($image = $request->image) {
+            $url = uploadImage($image, 'user');
+            $user->image = $url;
+        }
+        $user->password = bcrypt($request->password);
+        $user->save();
+
+        if ($request->roles) {
+            $user->assignRole($request->roles);
+        }
+
+        return true;
+    }
+}
